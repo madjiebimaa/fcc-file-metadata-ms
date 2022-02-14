@@ -1,0 +1,14 @@
+@hostname = localhost
+@port = 3000
+@host = {{hostname}}:{{port}}
+@baseURL = http://{{host}}/api
+
+POST {{baseURL}}/files
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="file"; filename="prince.png"
+Content-Type: image/png
+
+< ./../uploaded/prince.png
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
