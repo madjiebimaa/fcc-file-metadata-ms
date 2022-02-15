@@ -1,0 +1,6 @@
+version: "3"
+services:
+  fcc-file-metadata-ms:
+    image: madjiebimaa/fcc-file-metadata-ms:v1
+    ports:
+      - 3000:3000
